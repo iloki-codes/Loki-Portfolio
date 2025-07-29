@@ -1,7 +1,7 @@
 import React from 'react';
-import { BrowswerRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { motion } from "framer-motion";
-import Aos from 'aos';
+import AOS from 'aos';
 import { useEffect } from 'react';
 import './App.css';
 
@@ -17,7 +17,7 @@ import Footer from './components/Footer';
 const App = () => {
 
   useEffect(() => {
-    Aos.init({ duration: 800, once: true });
+    AOS.init({ duration: 800, once: true });
   }, []);
 
   return (
