@@ -15,7 +15,7 @@ const Footer = () => {
     },
     {
       icon: <Mail />,
-      link: "lokesh.loki.codes@gmail.com"
+      link: "mailto:lokesh.loki.codes@gmail.com"
     }
   ]
 

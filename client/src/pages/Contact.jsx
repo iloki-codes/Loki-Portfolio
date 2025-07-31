@@ -3,7 +3,7 @@
 
 const Contact = () => {
 
-  const [form, setForm] =- useState({ name: "", email: "", message: "" });
+  const [form, setForm] = useState({ name: "", email: "", message: "" });
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -21,14 +21,14 @@ const Contact = () => {
           Get In Touch
         </h2>
 
-        <form onSubmit={handleSubmit} className="flex flex-xol space-y-6">
+        <form onSubmit={handleSubmit} className="flex flex-col space-y-6">
           <input
             type="text"
             name="name"
             placeholder="please Enter Your Name"
             value={form.name}
             onChange={handleChange}
-            className="gb-zinc-800 p-4 rounded-xl text-white focus:outline-none focus:ring-2 focuse:ring-blue-500"
+            className="bg-zinc-800 p-4 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
             required />
 
           <input

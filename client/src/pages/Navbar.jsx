@@ -18,20 +18,21 @@ const Navbar = () => {
 
     return (
 
-        <nav className="fixed top-0 left-0 w-full bg-black bg-opacity-90 shadow-lg z-50">
+        <nav className="fixed top-0 left-0 w-full bg-opacity-90 backdrop-blur-xl shadow-lg bg-linear-to-l from-teal-500 via-yellow-400 to-teal-700 z-50">
+
             <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
                 <Link to="/" className="text-xl font-bold tracking-wide text-white">
                     iLokiCodes
                 </Link>
 
-                <div className="hidden md:flex space-x-6">
+                <div className="hidden font-bold md:flex space-x-6">
                     {
                         navLinks.map((link) => (
                             <Link
                                 key={link.name}
                                 to={link.path}
-                                className={`hover:text-blue-400 transition-colors duration-200
-                                    ${pathname === link.path ? "text-blue-400" : "text-white"}`}
+                                className={`hover:text-cyan-300 hover-px-50 hover:border-b-4 transition-colors duration-200 hover:rotate-x-15 -rotate-y-30
+                                    ${pathname === link.path ? "text-cyan-300" : "text-white"}`}
                             >
                                 {link.name}
                             </Link>
