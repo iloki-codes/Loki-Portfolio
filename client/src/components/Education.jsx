@@ -1,17 +1,16 @@
 ﻿
-import { motion, useScroll } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
 const Education = () => {
 
     const scrollRef = useRef(null);
 
-    // const [isClient, setIsClient] = useState(false);
+    // // const [isClient, setIsClient] = useState(false);
 
-    const { scrollYProgress } = useScroll({
-        target: scrollRef,
-        offset: ["start end", "end end"]
-    });
+    const { scrollYProgress } = useScroll();
+
+    const dotY = useTransform(scrollYProgress, [0,1], [0,300])
 
     const edList = [
         {
@@ -47,7 +46,7 @@ const Education = () => {
     return (
 
         <>
-            <section className="relative bg-linear-to-br from-yellow-800 via-emerald-900 to-[#0f2027] rounded-xl shadow-xl border-2 border-black py-16 px-10 min-h-200vh[]" data-aos="fade-up">
+            <section ref={scrollRef} className="relative bg-linear-to-br from-yellow-800 via-emerald-900 to-[#0f2027] rounded-xl shadow-xl border-2 border-black py-16 px-10 min-h-200vh[]" data-aos="fade-up">
 
                 <h2 className="relative text-3xl sm:text-4xl font-bold text-[#ffd700] text-center mb-12">
                     Education
@@ -55,12 +54,14 @@ const Education = () => {
 
                 <div className="relative space-y-10 max-w-3xl max-auto px-4">
 
-                    <div className="absolute left-2 top-0 h-full flex flex-col items-center z-0">
-                    <div className="w-3 h-3 rounded-full bg-lime-400 shadow-[0_0_15px_5px_#84cc16] z-10"></div>
+                    <div className="w-3 h-full">
                         <motion.div
-                            ref={scrollRef}
                             style={{ scaleY: scrollYProgress, originY: 0 }}
-                            className="w-[3px] h-full absolute bg-linear-to-b from-lime-400 via-lime-300 to-transparent"
+                            className="w-[3px] h-full absolute left-1 top-0 bg-linear-to-b from-lime-400 via-lime-300 to-transparent flex flex-col items-center"
+                         />
+                        <motion.div
+                            style={{y: dotY}}
+                            className="w-3 h-3 rounded-full bg-lime-400 shadow-[0_0_15px_5px_#84cc16] mt-auto z-10 absolute left-0 top-0"
                         />
                     </div>
 

@@ -26,7 +26,7 @@ const App = () => {
 
       <Router>
 
-        <div className='inset-0 bg-linear-to-r from-emerald-800 via-emerald-400 to-emerald-900 bg-opacity-60 backdrop-blur-xl font-sans'>
+        <div className='inset-0 bg-linear-to-r from-emerald-800 via-emerald-400 to-emerald-950 bg-opacity-60 backdrop-blur-xl font-sans'>
 
           <Navbar />
 

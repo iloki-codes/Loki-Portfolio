@@ -7,8 +7,8 @@ import pfp from "../assets/pfp.jpg";
 const Home = () => {
 
     return (
-        <section className="flex flex-col justify-center items-center text-center min-h-screen"
-            data-aos="fade-up">
+
+        <section className="flex flex-col justify-center items-center text-center min-h-screen" data-aos="fade-up">
 
             <img src={pfp} alt={pfp} className="h-30 w-30 rounded-full" />
             <br />
