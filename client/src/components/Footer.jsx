@@ -21,21 +21,21 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="py-10 px-6 bg-zinc-950 text-center mt-16 border-t border-zinc-800">
+      <footer className="py-10 px-6 bg-linear-to-br from-stone-800 via-teal-900 to-yellow-900 text-center mt-16 border-t border-zinc-800">
         <div className="flex justify-center gap-6 mb-4">
-          {socials.map((social, index) => (
+          {socials.map((item, i) => (
             <a
-              key={index}
-              href={social.link}
+              key={i}
+              href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition">
-                {social.icon}
+              className="text-slate-400 hover:text-[#ffd700] transition">
+                {item.icon}
             </a>
           ))}
         </div>
 
-        <p className="text-sm text-gray-500">
+        <p className="text-sm text-gray-400">
           &copy; {new Date().getFullYear()} Lokesh. All rights reserved.
         </p>
       </footer>

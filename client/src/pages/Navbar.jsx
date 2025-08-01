@@ -31,7 +31,7 @@ const Navbar = () => {
                             <Link
                                 key={link.name}
                                 to={link.path}
-                                className={`hover:text-cyan-300 hover-px-50 hover:border-b-4 transition-colors duration-200 hover:rotate-x-15 -rotate-y-30
+                                className={`hover:text-cyan-300 hover-px-50 hover:border-b-4 transition-colors duration-200
                                     ${pathname === link.path ? "text-cyan-300" : "text-white"}`}
                             >
                                 {link.name}
