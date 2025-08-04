@@ -12,6 +12,7 @@ import Contact from './pages/Contact';
 import Blog from './pages/Blog';
 import Projects from './pages/Projects';
 import Footer from './components/Footer';
+import Hover from './components/Hover';
 
 
 const App = () => {
@@ -29,6 +30,8 @@ const App = () => {
         <div className='inset-0 bg-linear-to-r from-emerald-800 via-emerald-400 to-emerald-950 bg-opacity-60 backdrop-blur-xl font-sans'>
 
           <Navbar />
+
+          <Hover className="pointer-events-none" />
 
           <Routes>
 

@@ -22,16 +22,16 @@ const Home = () => {
             <div className="flex flex-col sm:flex-row gap-4">
 
                 <a
-                    href="/https://docs.google.com/document/d/1lM4-_OEnFxlgYHFuV8EHbO_NnrTBVBVIx8GvrzcVZYQ/edit?usp=drivesdk"
+                    href="https://docs.google.com/document/d/1lM4-_OEnFxlgYHFuV8EHbO_NnrTBVBVIx8GvrzcVZYQ/edit?usp=drivesdk"
                     download
-                    className="bg-linear-to-br from-teal-500 via-teal-700 to-teal-900 text-white font-bold px-6 py-3 rounded-xl shadow-xl hover:bg-blue-600 transition-all"
+                    className="bg-linear-to-br from-teal-500 via-teal-700 to-teal-900 text-white font-bold px-6 py-3 rounded-xl shadow-xl hover:bg-blue-600 hover:border-2 transition-all hover:cursor-pointer hover:scale-[1.05]"
                 >
                     Download CV
                 </a>
 
                 <Link
                     to="/projects"
-                    className="flex items-center gap-2 border border-white px-6 py-3 rounded-xl bg-linear-to-r from-teal-500 via-teal-700 to-teal-900 text-white hover:bg-white hover:text-black transition"
+                    className="flex items-center gap-2 border border-white px-6 py-3 rounded-xl bg-linear-to-r from-teal-500 via-teal-700 to-teal-900 text-white hover:bg-white hover:text-black hover:font-bold transition"
                 >
                     View Projects <ArrowRight size={18} />
                 </Link>

@@ -18,18 +18,20 @@ const Blog = () => {
 
     <>
       <section className="py-16 px-4" data-aos="fade-up">
+
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">Blog & Articles</h2>
 
         <div className="max-w-4xl mx-auto grid gap-8">
-          {blogs.map((post, index) => (
+
+          {blogs.map((post, i) => (
             <a
-              key={index}
+              key={i}
               href={post.link}
-              className="block bg-zinc-900 hover:bg-zinc-800 transition-all p-6 rounded-xl shadow"
+              className="block bg-linear-to-br from-zinc-900 via-yellow-950 to-teal-900 hover:bg-zinc-800 transition-all p-6 rounded-xl shadow hover:cursor-pointer"
             >
-              <h3 className="text-2xl font-semibold text-blue-400mb-2">{post.title}</h3>
+              <h3 className="text-2xl text-[#ffd700] font-semibold text-blue-400mb-2">{post.title}</h3>
               {/* <p className="text-gray-300 text-sm mb-2">{post.date}</p> */}
-              <p className="text-gray-400 text-base">{post.desc}</p>
+              <p className="text-gray-400 text-white text-base">{post.desc}</p>
             </a>
           ))}
         </div>

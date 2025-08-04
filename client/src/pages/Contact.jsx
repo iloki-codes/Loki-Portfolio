@@ -8,6 +8,7 @@ const Contact = () => {
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted", form);
@@ -49,7 +50,7 @@ const Contact = () => {
               className="bg-zinc-800 p-4 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
               required></textarea>
 
-              <button type="submit" className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-xl transition">Send Message</button>
+              <button type="submit" className="bg-linear-to-r from-teal-700 via-yellow-700 to-teal-900 hover:bg-blue-600 hover:cursor-pointer text-white font-semibold px-6 py-3 rounded-xl transition">Send Message</button>
         </form>
 
       </section>
