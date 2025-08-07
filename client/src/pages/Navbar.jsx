@@ -18,7 +18,7 @@ const Navbar = () => {
 
     return (
 
-        <nav className="fixed top-0 left-0 w-full bg-opacity-90 backdrop-blur-xl shadow-lg bg-linear-to-l from-teal-500 via-yellow-400 to-teal-700 z-50">
+        <nav className="fixed top-0 left-0 w-full bg-opacity-90 backdrop-blur-xl shadow-zinc-600 shadow-lg z-50">
 
             <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
                 <Link to="/" className="text-xl font-bold tracking-wide text-white">

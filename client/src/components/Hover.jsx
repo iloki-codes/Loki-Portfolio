@@ -6,7 +6,7 @@ const Hover = () => {
 
     const [show, setShow] = useState(false);
 
-    const circles = Array.from({ length: 2 }, (_, i) => ({
+    const circles = Array.from({ length: 10 }, (_, i) => ({
         id: i,
         color: getRandomColor(),
         x: Math.random() * window.innerWidth,
@@ -16,7 +16,7 @@ const Hover = () => {
     return (
 
         <div
-            className='fixed inset-0 z-1 pointer-events-none'
+            className='fixed inset-0 -z-1'
             onMouseEnter={() => setShow(true)}
             onMouseLeave={() => setShow(false)}
         >

@@ -66,9 +66,11 @@ const Skills = () => {
 
             <div className="">
 
-                <section className="py-20 px-4 sm:px-6 md:px-12 lg:px-24 bg-linear-to-br from-[#0f2027] via-emerald-900 to-yellow-800 text-[#ffd700] rounded-xl shadow-xl">
+                <section className="py-20 px-4 sm:px-6 md:px-12 lg:px-24 bg-linear-to-br from-lime-200 via-[#0f2027] to-yellow-800 text-[#ffeb54] rounded-xl shadow-xl">
 
-                    <h2 className="text-3xl sm:text-4xl font-bold mb-10 text-center">Skills & Expertise</h2>
+                    <h2 className="text-3xl sm:text-4xl font-bold mb-10 text-center">
+                        Skills & Expertise
+                    </h2>
 
                     <div className="space-y-6 max-w-3xl mx-auto">
                         {

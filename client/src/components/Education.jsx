@@ -46,9 +46,9 @@ const Education = () => {
     return (
 
         <>
-            <section ref={scrollRef} className="relative bg-linear-to-br from-yellow-800 via-emerald-900 to-[#0f2027] rounded-xl shadow-xl border-2 border-black py-16 px-10 min-h-200vh[]" data-aos="fade-up">
+            <section ref={scrollRef} className="relative bg-linear-to-br from-yellow-800 via-[#0f2027] to-lime-200 rounded-xl shadow-xl border-2 border-black py-16 px-10 min-h-200vh[]" data-aos="fade-up">
 
-                <h2 className="relative text-3xl sm:text-4xl font-bold text-[#ffd700] text-center mb-12">
+                <h2 className="relative text-3xl sm:text-4xl font-bold text-[#ffeb54] text-center mb-12">
                     Education
                 </h2>
 

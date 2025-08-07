@@ -21,7 +21,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="py-10 px-6 bg-linear-to-br from-stone-800 via-teal-900 to-yellow-900 text-center mt-16 border-t border-zinc-800">
+      <footer className="py-10 px-6 bg-linear-to-br from-stone-800 via-zinc-800 to-yellow-950 text-center mt-16 border-t border-zinc-800">
         <div className="flex justify-center gap-6 mb-4">
           {socials.map((item, i) => (
             <a
