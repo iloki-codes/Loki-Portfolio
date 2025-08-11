@@ -21,7 +21,7 @@ const Contact = () => {
     setError("");
 
     try {
-      const res = await axios.post("http://localhost:8080/api/v1/contact", form);
+      const res = await axios.post("https://loki-portfolio.onrender.com/api/v1/contact", form);
 
       if (res.status === 201) {
         setSuccess("Message Sent Successfully");

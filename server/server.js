@@ -10,14 +10,14 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 app.use(cors({
-    origin: "http://localhost:5173"
+    origin: ["http://localhost:5173", "https://loki-portfolio.onrender.com"]
 }));
 app.use(express.json());
 
 mongoose.connect(process.env.MONGODB_URL, {}).then(() => {
     console.log("Database conected successfully");
     app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-}).catch(err => console.error("DB Connection error"));
+}).catch((error) => console.error("DB Connection error", error));
 
 
 app.get("/", (req, res) => {
