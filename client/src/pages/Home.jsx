@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Education from "../components/Education";
 import Skills from "../components/Skills";
 import pfp from "../assets/loki-pfp.png";
-import resume from "../assets/Resume.pdf";
+import resume from "../assets/Lokesh-Resume.pdf";
 
 const Home = () => {
 
