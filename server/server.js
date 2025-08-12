@@ -10,7 +10,7 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 app.use(cors({
-    origin: ["http://localhost:5173", "https://loki-portfolio.onrender.com"]
+    origin: ["http://localhost:5173", "https://loki-codes.netlify.app", "https://loki-portfolio.onrender.com"]
 }));
 app.use(express.json());
 
